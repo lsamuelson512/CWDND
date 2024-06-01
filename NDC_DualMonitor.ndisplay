@@ -19,9 +19,9 @@
 					"parentId": "",
 					"location":
 					{
-						"x": 100,
-						"y": 0,
-						"z": 50
+						"x": 74,
+						"y": 9,
+						"z": 40
 					},
 					"rotation":
 					{
@@ -41,9 +41,9 @@
 					"parentId": "",
 					"location":
 					{
-						"x": 0,
+						"x": 11,
 						"y": 0,
-						"z": 50
+						"z": 30
 					},
 					"rotation":
 					{
@@ -59,15 +59,15 @@
 				{
 					"size":
 					{
-						"width": 100,
-						"height": 56.25
+						"width": 200,
+						"height": 112.5
 					},
 					"parentId": "nDisplayXform",
 					"location":
 					{
-						"x": 0,
-						"y": 50,
-						"z": 0
+						"x": 26,
+						"y": 99.999984741210938,
+						"z": 34.642902374267578
 					},
 					"rotation":
 					{
@@ -86,15 +86,15 @@
 					"parentId": "nDisplayXform",
 					"location":
 					{
-						"x": 0,
-						"y": -50,
-						"z": 0
+						"x": 26,
+						"y": -49.798347473144531,
+						"z": 62.726871490478516
 					},
 					"rotation":
 					{
 						"pitch": 0,
 						"yaw": 0,
-						"roll": 0
+						"roll": 8.58306884765625e-06
 					}
 				}
 			}
@@ -103,7 +103,7 @@
 		{
 			"primaryNode":
 			{
-				"id": "Node_0",
+				"id": "Node_1",
 				"ports":
 				{
 					"ClusterSync": 41001,
@@ -146,7 +146,72 @@
 				"Node_0":
 				{
 					"host": "127.0.0.1",
-					"sound": true,
+					"sound": false,
+					"fullScreen": false,
+					"renderHeadless": false,
+					"graphicsAdapter": -1,
+					"textureShare": false,
+					"window":
+					{
+						"x": 1920,
+						"y": 0,
+						"w": 3840,
+						"h": 2160
+					},
+					"postprocess":
+					{
+					},
+					"viewports":
+					{
+						"VP_Right":
+						{
+							"camera": "DefaultViewPoint",
+							"bufferRatio": 1,
+							"gPUIndex": -1,
+							"allowCrossGPUTransfer": false,
+							"isShared": false,
+							"overscan":
+							{
+								"bEnabled": false,
+								"mode": "percent",
+								"left": 0,
+								"right": 0,
+								"top": 0,
+								"bottom": 0,
+								"oversize": true
+							},
+							"region":
+							{
+								"x": 0,
+								"y": 0,
+								"w": 3840,
+								"h": 2160
+							},
+							"projectionPolicy":
+							{
+								"type": "Mesh",
+								"parameters":
+								{
+									"section_index": "0.0",
+									"base_uv_index": "-1.0",
+									"chromakey_uv_index": "-1.0",
+									"mesh_component": "nDisplayScreenRight"
+								}
+							}
+						}
+					},
+					"outputRemap":
+					{
+						"bEnable": false,
+						"dataSource": "mesh",
+						"staticMeshAsset": "",
+						"externalFile": ""
+					}
+				},
+				"Node_1":
+				{
+					"host": "127.0.0.1",
+					"sound": false,
 					"fullScreen": false,
 					"renderHeadless": false,
 					"graphicsAdapter": -1,
@@ -155,7 +220,7 @@
 					{
 						"x": 0,
 						"y": 0,
-						"w": 3840,
+						"w": 1920,
 						"h": 1080
 					},
 					"postprocess":
@@ -165,7 +230,7 @@
 					{
 						"VP_Left":
 						{
-							"camera": "DefaultViewPoint",
+							"camera": "",
 							"bufferRatio": 1,
 							"gPUIndex": -1,
 							"allowCrossGPUTransfer": false,
@@ -189,43 +254,13 @@
 							},
 							"projectionPolicy":
 							{
-								"type": "simple",
+								"type": "Mesh",
 								"parameters":
 								{
-									"screen": "nDisplayScreenLeft"
-								}
-							}
-						},
-						"VP_Right":
-						{
-							"camera": "DefaultViewPoint",
-							"bufferRatio": 1,
-							"gPUIndex": -1,
-							"allowCrossGPUTransfer": false,
-							"isShared": false,
-							"overscan":
-							{
-								"bEnabled": false,
-								"mode": "percent",
-								"left": 0,
-								"right": 0,
-								"top": 0,
-								"bottom": 0,
-								"oversize": true
-							},
-							"region":
-							{
-								"x": 1920,
-								"y": 0,
-								"w": 1920,
-								"h": 1080
-							},
-							"projectionPolicy":
-							{
-								"type": "simple",
-								"parameters":
-								{
-									"screen": "nDisplayScreenRight"
+									"section_index": "0.0",
+									"base_uv_index": "-1.0",
+									"chromakey_uv_index": "-1.0",
+									"mesh_component": "nDisplayScreenLeft"
 								}
 							}
 						}
